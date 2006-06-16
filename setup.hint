@@ -1,0 +1,5 @@
+category: Ruby
+requires: cygwin ruby 
+sdesc: "Ruby gettext NLS module"
+ldesc: "Ruby GetText Package is Native Language Support
+which is modeled after the GNU gettext package."
