@@ -1,0 +1,19 @@
+inherit ruby
+
+DESCRIPTION="Ruby NLS module"
+HOMEPAGE="http://www.yotabanana.com/hiki/ruby-gettext.html"
+SRC_URI="mirror://rubyforge/gettext/${PN}-package-${PV}.tar.gz"
+SRC_DIR="${PN}-package-${PV}"
+
+src_install() {
+	cd ${B}
+	${RUBY} setup.rb config \
+	    --prefix=${D}/usr \
+	    --siterubyver=${D}${RUBY_SITELIB} \
+	    --siterubyverarch=${D}${RUBY_SITEARCH} \
+    	|| error
+	${RUBY} setup.rb install || error
+
+	dodir /usr/share/doc/${P}
+	cp -r rdoc ${D}/usr/share/doc/${P}
+}
