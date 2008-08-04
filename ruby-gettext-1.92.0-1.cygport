@@ -13,7 +13,4 @@ src_install() {
 	    --siterubyverarch=${D}${RUBY_SITEARCH} \
     	|| error
 	${RUBY} setup.rb install || error
-
-	dodir /usr/share/doc/${P}
-	cp -r rdoc ${D}/usr/share/doc/${P}
 }
