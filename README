@@ -157,4 +157,4 @@ Includes a change to locale.rb for cygwin not to be treated as win32.
 
 
 Cygwin port maintained by:
-http://cygwinports.dotsrc.org/
+http://sourceware.org/cygwinports/
