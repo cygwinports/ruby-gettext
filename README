@@ -4,10 +4,10 @@ Ruby GetText Package is Native Language Support
 which is modeled after the GNU gettext package.
 
 Runtime requirements:
-  ruby-1.8.7_p22-1
+  ruby-1.8.7_p72-1
 
 Build requirements:
-  cygport-0.3.12-1
+  cygport-0.4.0-1
   rake-0.7.2-1
 
 Canonical homepage:
@@ -19,15 +19,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ruby-gettext-1.92.0-X-src.tar.bz2
+  unpack ruby-gettext-1.93.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ruby-gettext-1.92.0-X.cygport all
+  cygport ./ruby-gettext-1.93.0-X.cygport all
 
 This will create:
-  /usr/src/ruby-gettext-1.92.0-X-src.tar.bz2
-  /usr/src/ruby-gettext-1.92.0-X.tar.bz2
+  /usr/src/ruby-gettext-1.93.0-X-src.tar.bz2
+  /usr/src/ruby-gettext-1.93.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,10 +66,12 @@ Files included in the binary package:
   /usr/lib/ruby/site_ruby/1.8/locale/posix.rb
   /usr/lib/ruby/site_ruby/1.8/locale/win32.rb
   /usr/lib/ruby/site_ruby/1.8/locale/win32_table.rb
-  /usr/share/doc/ruby-gettext-1.92.0/COPYING
-  /usr/share/doc/ruby-gettext-1.92.0/ChangeLog
-  /usr/share/doc/ruby-gettext-1.92.0/NEWS
-  /usr/share/doc/ruby-gettext-1.92.0/README
+  /usr/share/doc/ruby-gettext-1.93.0/COPYING
+  /usr/share/doc/ruby-gettext-1.93.0/ChangeLog
+  /usr/share/doc/ruby-gettext-1.93.0/NEWS
+  /usr/share/doc/ruby-gettext-1.93.0/README
+  /usr/share/locale/bg/LC_MESSAGES/rails.mo
+  /usr/share/locale/bg/LC_MESSAGES/rgettext.mo
   /usr/share/locale/bs/LC_MESSAGES/rails.mo
   /usr/share/locale/bs/LC_MESSAGES/rgettext.mo
   /usr/share/locale/ca/LC_MESSAGES/rails.mo
@@ -85,6 +87,7 @@ Files included in the binary package:
   /usr/share/locale/es/LC_MESSAGES/rails.mo
   /usr/share/locale/es/LC_MESSAGES/rgettext.mo
   /usr/share/locale/et/LC_MESSAGES/rails.mo
+  /usr/share/locale/et/LC_MESSAGES/rgettext.mo
   /usr/share/locale/fr/LC_MESSAGES/rails.mo
   /usr/share/locale/fr/LC_MESSAGES/rgettext.mo
   /usr/share/locale/hr/LC_MESSAGES/rails.mo
@@ -97,6 +100,8 @@ Files included in the binary package:
   /usr/share/locale/ja/LC_MESSAGES/rgettext.mo
   /usr/share/locale/ko/LC_MESSAGES/rails.mo
   /usr/share/locale/ko/LC_MESSAGES/rgettext.mo
+  /usr/share/locale/lv/LC_MESSAGES/rails.mo
+  /usr/share/locale/lv/LC_MESSAGES/rgettext.mo
   /usr/share/locale/nb/LC_MESSAGES/rails.mo
   /usr/share/locale/nb/LC_MESSAGES/rgettext.mo
   /usr/share/locale/nl/LC_MESSAGES/rails.mo
@@ -120,6 +125,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.93.0-1 -----
+Version bump.
 
 ----- version 1.92.0-1 -----
 Version bump.
