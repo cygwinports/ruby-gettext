@@ -1,9 +1,0 @@
-inherit ruby
-
-DESCRIPTION="Ruby NLS module"
-HOMEPAGE="http://www.yotabanana.com/hiki/ruby-gettext.html"
-SRC_URI="mirror://rubyforge/gettext/${PN}-package-${PV}.tar.gz"
-SRC_DIR="${PN}-package-${PV}"
-
-RDOC_SOURCE="lib"
-RDOC_MODULE="GetText Locale"

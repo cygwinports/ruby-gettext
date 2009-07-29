@@ -1,5 +1,5 @@
 category: Ruby
-requires: ruby
-sdesc: "Ruby gettext NLS module"
+requires: ruby ruby-locale
+sdesc: "Ruby gettext NLS library"
 ldesc: "Ruby GetText Package is Native Language Support
 which is modeled after the GNU gettext package."

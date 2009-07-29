@@ -4,14 +4,15 @@ Ruby GetText Package is Native Language Support
 which is modeled after the GNU gettext package.
 
 Runtime requirements:
-  ruby-1.8.7_p72-1
+  ruby-1.8.7_p72-10
+  ruby-locale-2.0.4-1
 
 Build requirements:
-  cygport-0.4.0-1
-  rake-0.7.2-1
+  cygport-0.9.8-1
+  rake-0.8.4-1
 
 Canonical homepage:
-  http://ponx.s5.xrea.com/hiki/ruby-gettext.html
+  http://www.yotabanana.com/hiki/ruby-gettext.html
 
 Canonical download:
   http://rubyforge.org/frs/?group_id=855
@@ -19,15 +20,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ruby-gettext-1.93.0-X-src.tar.bz2
+  unpack ruby-gettext-2.0.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ruby-gettext-1.93.0-X.cygport all
+  cygport ./ruby-gettext-2.0.4-X.cygport all
 
 This will create:
-  /usr/src/ruby-gettext-1.93.0-X-src.tar.bz2
-  /usr/src/ruby-gettext-1.93.0-X.tar.bz2
+  /usr/src/ruby-gettext-2.0.4-X-src.tar.bz2
+  /usr/src/ruby-gettext-2.0.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -37,103 +38,86 @@ Files included in the binary package:
   /usr/bin/rmsgfmt
   /usr/bin/rmsgmerge
   /usr/lib/ruby/site_ruby/1.8/gettext.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/active_record.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/cgi.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/container.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/erb.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/iconv.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/mo.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/parser/active_record.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/class_info.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/core_ext/iconv.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/core_ext/string.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/locale_path.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/mofile.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/parser/erb.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/parser/glade.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/parser/ruby.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/poparser.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/rails.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/rails_compat.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/rgettext.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/rmsgfmt.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/rmsgmerge.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/string.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/textdomain.rb
-  /usr/lib/ruby/site_ruby/1.8/gettext/textdomainmanager.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/textdomain_group.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/textdomain_manager.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/tools.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/tools/rgettext.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/tools/rmsgfmt.rb
+  /usr/lib/ruby/site_ruby/1.8/gettext/tools/rmsgmerge.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/utils.rb
   /usr/lib/ruby/site_ruby/1.8/gettext/version.rb
-  /usr/lib/ruby/site_ruby/1.8/locale.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/base.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/cgi.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/jruby.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/object.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/posix.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/win32.rb
-  /usr/lib/ruby/site_ruby/1.8/locale/win32_table.rb
-  /usr/share/doc/ruby-gettext-1.93.0/COPYING
-  /usr/share/doc/ruby-gettext-1.93.0/ChangeLog
-  /usr/share/doc/ruby-gettext-1.93.0/NEWS
-  /usr/share/doc/ruby-gettext-1.93.0/README
-  /usr/share/locale/bg/LC_MESSAGES/rails.mo
+  /usr/share/doc/ruby-gettext/COPYING
+  /usr/share/doc/ruby-gettext/ChangeLog
   /usr/share/locale/bg/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/bs/LC_MESSAGES/rails.mo
   /usr/share/locale/bs/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/ca/LC_MESSAGES/rails.mo
   /usr/share/locale/ca/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/cs/LC_MESSAGES/rails.mo
   /usr/share/locale/cs/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/de/LC_MESSAGES/rails.mo
   /usr/share/locale/de/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/el/LC_MESSAGES/rails.mo
   /usr/share/locale/el/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/eo/LC_MESSAGES/rails.mo
   /usr/share/locale/eo/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/es/LC_MESSAGES/rails.mo
   /usr/share/locale/es/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/et/LC_MESSAGES/rails.mo
   /usr/share/locale/et/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/fr/LC_MESSAGES/rails.mo
   /usr/share/locale/fr/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/hr/LC_MESSAGES/rails.mo
   /usr/share/locale/hr/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/hu/LC_MESSAGES/rails.mo
   /usr/share/locale/hu/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/it/LC_MESSAGES/rails.mo
   /usr/share/locale/it/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/ja/LC_MESSAGES/rails.mo
   /usr/share/locale/ja/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/ko/LC_MESSAGES/rails.mo
   /usr/share/locale/ko/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/lv/LC_MESSAGES/rails.mo
   /usr/share/locale/lv/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/nb/LC_MESSAGES/rails.mo
   /usr/share/locale/nb/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/nl/LC_MESSAGES/rails.mo
   /usr/share/locale/nl/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/rails.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/ru/LC_MESSAGES/rails.mo
   /usr/share/locale/ru/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/sr/LC_MESSAGES/rails.mo
   /usr/share/locale/sr/LC_MESSAGES/rgettext.mo
   /usr/share/locale/sv/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/ua/LC_MESSAGES/rails.mo
   /usr/share/locale/ua/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/vi/LC_MESSAGES/rails.mo
   /usr/share/locale/vi/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/zh/LC_MESSAGES/rails.mo
   /usr/share/locale/zh/LC_MESSAGES/rgettext.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/rails.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/rgettext.mo
-  /usr/share/ri/1.8/site/GetText/ActiveRecordParser/cdesc-ActiveRecordParser.yaml
-  /usr/share/ri/1.8/site/GetText/ActiveRecordParser/init-i.yaml
-  /usr/share/ri/1.8/site/GetText/ActiveRecordParser/untranslate_column%3f-i.yaml
-  /usr/share/ri/1.8/site/GetText/Container/cdesc-Container.yaml
-  /usr/share/ri/1.8/site/GetText/ErbContainer/cdesc-ErbContainer.yaml
-  /usr/share/ri/1.8/site/GetText/ErbContainer/eval_file-i.yaml
-  /usr/share/ri/1.8/site/GetText/ErbContainer/eval_src-i.yaml
+  /usr/share/ri/1.8/site/GetText/ClassInfo/cdesc-ClassInfo.yaml
+  /usr/share/ri/1.8/site/GetText/ClassInfo/normalize_class-i.yaml
+  /usr/share/ri/1.8/site/GetText/ClassInfo/related_classes-i.yaml
+  /usr/share/ri/1.8/site/GetText/ClassInfo/related_classes_internal-i.yaml
   /usr/share/ri/1.8/site/GetText/ErbParser/cdesc-ErbParser.yaml
   /usr/share/ri/1.8/site/GetText/ErbParser/init-i.yaml
   /usr/share/ri/1.8/site/GetText/GladeParser/cdesc-GladeParser.yaml
+  /usr/share/ri/1.8/site/GetText/LocalePath/add_default_rule-c.yaml
+  /usr/share/ri/1.8/site/GetText/LocalePath/cdesc-LocalePath.yaml
+  /usr/share/ri/1.8/site/GetText/LocalePath/current_path-i.yaml
+  /usr/share/ri/1.8/site/GetText/LocalePath/default_path_rules-c.yaml
+  /usr/share/ri/1.8/site/GetText/LocalePath/new-c.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/HeaderRev1/cdesc-HeaderRev1.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/InvalidFormat/cdesc-InvalidFormat.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/cdesc-MOFile.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/hash_string-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/load-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/load_from_file-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/load_from_stream-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/new-c.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/next_prime-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/open-c.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/plural_as_proc-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/prime%3f-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/save_to_file-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/save_to_stream-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/set_comment-i.yaml
+  /usr/share/ri/1.8/site/GetText/MOFile/update%21-i.yaml
   /usr/share/ri/1.8/site/GetText/N_-i.yaml
   /usr/share/ri/1.8/site/GetText/Nn_-i.yaml
   /usr/share/ri/1.8/site/GetText/NoboundTextDomainError/cdesc-NoboundTextDomainError.yaml
+  /usr/share/ri/1.8/site/GetText/NoboundTextDomainError/message-i.yaml
+  /usr/share/ri/1.8/site/GetText/NoboundTextDomainError/new-c.yaml
   /usr/share/ri/1.8/site/GetText/PoParser/_reduce_none-i.yaml
   /usr/share/ri/1.8/site/GetText/PoParser/cdesc-PoParser.yaml
   /usr/share/ri/1.8/site/GetText/RGetText/cdesc-RGetText.yaml
@@ -142,45 +126,42 @@ Files included in the binary package:
   /usr/share/ri/1.8/site/GetText/RMsgMerge/PoData/cdesc-PoData.yaml
   /usr/share/ri/1.8/site/GetText/RMsgMerge/cdesc-RMsgMerge.yaml
   /usr/share/ri/1.8/site/GetText/RMsgfmt/cdesc-RMsgfmt.yaml
-  /usr/share/ri/1.8/site/GetText/Rails/available_locales-i.yaml
-  /usr/share/ri/1.8/site/GetText/Rails/bindtextdomain-i.yaml
-  /usr/share/ri/1.8/site/GetText/Rails/cdesc-Rails.yaml
-  /usr/share/ri/1.8/site/GetText/Rails/normalized_locale-i.yaml
   /usr/share/ri/1.8/site/GetText/RubyParser/cdesc-RubyParser.yaml
   /usr/share/ri/1.8/site/GetText/TextDomain/add_default_locale_path-c.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomain/cached%3d-c.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomain/cached%3f-c.yaml
   /usr/share/ri/1.8/site/GetText/TextDomain/cdesc-TextDomain.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomain/check_mo%3d-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomain/check_mo%3f-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomain/gettext-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomain/clear-i.yaml
   /usr/share/ri/1.8/site/GetText/TextDomain/new-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomain/ngettext-i.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomain/same_property%3f-i.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomain/set_locale-i.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/add_textdomain-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomain/output_charset%3d-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomain/translate_singluar_message-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainGroup/add-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainGroup/cdesc-TextDomainGroup.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainGroup/new-c.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/bind_to-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/cached%3d-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/cached%3f-i.yaml
   /usr/share/ri/1.8/site/GetText/TextDomainManager/cdesc-TextDomainManager.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/each-i.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/each_all-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/new-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/output_charset%3d-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/output_charset-c.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/set_locale-i.yaml
-  /usr/share/ri/1.8/site/GetText/TextDomainManager/textdomain-c.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/clear_all_textdomains-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/output_charset%3d-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/output_charset-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/textdomain_pool-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/translate_plural_message-i.yaml
+  /usr/share/ri/1.8/site/GetText/TextDomainManager/translate_singluar_message-i.yaml
   /usr/share/ri/1.8/site/GetText/_-i.yaml
-  /usr/share/ri/1.8/site/GetText/add_default_locale_path-i.yaml
   /usr/share/ri/1.8/site/GetText/bindtextdomain-i.yaml
   /usr/share/ri/1.8/site/GetText/bindtextdomain_to-i.yaml
-  /usr/share/ri/1.8/site/GetText/cached%3d-i.yaml
-  /usr/share/ri/1.8/site/GetText/cached%3f-i.yaml
   /usr/share/ri/1.8/site/GetText/cdesc-GetText.yaml
   /usr/share/ri/1.8/site/GetText/cgi%3d-i.yaml
   /usr/share/ri/1.8/site/GetText/cgi-i.yaml
-  /usr/share/ri/1.8/site/GetText/clear_cache-i.yaml
   /usr/share/ri/1.8/site/GetText/create_mofiles-i.yaml
-  /usr/share/ri/1.8/site/GetText/current_textdomain_info-i.yaml
+  /usr/share/ri/1.8/site/GetText/create_mofiles_org-i.yaml
+  /usr/share/ri/1.8/site/GetText/current_locale%3d-i.yaml
   /usr/share/ri/1.8/site/GetText/gettext-i.yaml
   /usr/share/ri/1.8/site/GetText/locale%3d-i.yaml
   /usr/share/ri/1.8/site/GetText/locale-i.yaml
   /usr/share/ri/1.8/site/GetText/msgmerge-i.yaml
+  /usr/share/ri/1.8/site/GetText/n_-i.yaml
   /usr/share/ri/1.8/site/GetText/ngettext-i.yaml
   /usr/share/ri/1.8/site/GetText/np_-i.yaml
   /usr/share/ri/1.8/site/GetText/npgettext-i.yaml
@@ -190,113 +171,26 @@ Files included in the binary package:
   /usr/share/ri/1.8/site/GetText/output_charset-i.yaml
   /usr/share/ri/1.8/site/GetText/p_-i.yaml
   /usr/share/ri/1.8/site/GetText/pgettext-i.yaml
-  /usr/share/ri/1.8/site/GetText/remove_all_textdomains-i.yaml
   /usr/share/ri/1.8/site/GetText/rgettext-i.yaml
   /usr/share/ri/1.8/site/GetText/rmsgfmt-i.yaml
   /usr/share/ri/1.8/site/GetText/rmsgmerge-i.yaml
   /usr/share/ri/1.8/site/GetText/s_-i.yaml
   /usr/share/ri/1.8/site/GetText/set_cgi-i.yaml
+  /usr/share/ri/1.8/site/GetText/set_current_locale-i.yaml
   /usr/share/ri/1.8/site/GetText/set_locale-i.yaml
   /usr/share/ri/1.8/site/GetText/set_locale_all-i.yaml
   /usr/share/ri/1.8/site/GetText/set_output_charset-i.yaml
   /usr/share/ri/1.8/site/GetText/setlocale-i.yaml
   /usr/share/ri/1.8/site/GetText/sgettext-i.yaml
-  /usr/share/ri/1.8/site/GetText/textdomain-i.yaml
-  /usr/share/ri/1.8/site/GetText/textdomain_to-i.yaml
   /usr/share/ri/1.8/site/GetText/update_pofiles-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/cdesc-Object.yaml
-  /usr/share/ri/1.8/site/Locale/Object/charset%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/clear-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/country%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/language%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/modifier%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/new-c.yaml
-  /usr/share/ri/1.8/site/Locale/Object/parse-c.yaml
-  /usr/share/ri/1.8/site/Locale/Object/script%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_a-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_general-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_iso3066-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_posix-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_s-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_str-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/to_win-i.yaml
-  /usr/share/ri/1.8/site/Locale/Object/variant%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemBase/cdesc-SystemBase.yaml
-  /usr/share/ri/1.8/site/Locale/SystemBase/charset-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemBase/get_charset-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemBase/locale_from_env-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemBase/system-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemCGI/cdesc-SystemCGI.yaml
-  /usr/share/ri/1.8/site/Locale/SystemCGI/cgi%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemCGI/cgi-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemCGI/default_locale-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemCGI/set_cgi-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemCGI/system-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemJRuby/cdesc-SystemJRuby.yaml
-  /usr/share/ri/1.8/site/Locale/SystemPosix/cdesc-SystemPosix.yaml
-  /usr/share/ri/1.8/site/Locale/SystemPosix/get_charset-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemWin32/cdesc-SystemWin32.yaml
-  /usr/share/ri/1.8/site/Locale/SystemWin32/get_charset-i.yaml
-  /usr/share/ri/1.8/site/Locale/SystemWin32Table/cdesc-SystemWin32Table.yaml
-  /usr/share/ri/1.8/site/Locale/cdesc-Locale.yaml
-  /usr/share/ri/1.8/site/Locale/cgi%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/cgi-i.yaml
-  /usr/share/ri/1.8/site/Locale/charset-i.yaml
-  /usr/share/ri/1.8/site/Locale/clear-i.yaml
-  /usr/share/ri/1.8/site/Locale/codeset-i.yaml
-  /usr/share/ri/1.8/site/Locale/current%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/current-i.yaml
-  /usr/share/ri/1.8/site/Locale/current_charset-i.yaml
-  /usr/share/ri/1.8/site/Locale/default%3d-i.yaml
-  /usr/share/ri/1.8/site/Locale/default-i.yaml
-  /usr/share/ri/1.8/site/Locale/get-i.yaml
-  /usr/share/ri/1.8/site/Locale/set-i.yaml
-  /usr/share/ri/1.8/site/Locale/set_cgi-i.yaml
-  /usr/share/ri/1.8/site/Locale/set_current-i.yaml
-  /usr/share/ri/1.8/site/Locale/set_default-i.yaml
-  /usr/share/ri/1.8/site/Locale/system-i.yaml
-  /usr/share/ri/1.8/site/Locale/system_module-i.yaml
+  /usr/share/ri/1.8/site/GetText/update_pofiles_org-i.yaml
 
 ------------------
 
 Port Notes:
 
------ version 1.93.0-1 -----
-Version bump.
-
------ version 1.92.0-1 -----
-Version bump.
-
------ version 1.91.0-1 -----
-Version bump.
-
------ version 1.10.0-1 -----
-Version bump.
-
------ version 1.9.0-1 -----
-Version bump.
-
------ version 1.8.0-1 -----
-Version bump.
-
------ version 1.7.0-1 -----
-Version bump.
-
------ version 1.6.0-1 -----
-Version bump.
-
------ version 1.5.0-1 -----
-Version bump.
-
------ version 1.2.0-1 -----
-Version bump.
-
------ version 1.1.0-1 -----
-Version bump.
-
------ version 0.8.0-1 -----
-Initial release for Cygwin.
-Includes a change to locale.rb for cygwin not to be treated as win32.
+----- version 2.0.4-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
