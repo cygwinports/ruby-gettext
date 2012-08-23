@@ -1,0 +1,5 @@
+inherit rubygem
+
+DESCRIPTION="Ruby-GetText-Package is a GNU GetText-like program for Ruby.
+The catalog file(po-file) is same format with GNU GetText. So you can use
+GNU GetText tools for maintaining."
