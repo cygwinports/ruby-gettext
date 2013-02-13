@@ -1,5 +1,10 @@
 inherit rubygem
 
+NAME="ruby-gettext"
+VERSION=2.3.7
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Gettext implementation"
 DESCRIPTION="Ruby-GetText-Package is a GNU GetText-like program for Ruby.
 The catalog file(po-file) is same format with GNU GetText. So you can use
 GNU GetText tools for maintaining."
